@@ -14,9 +14,11 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class AppComponent implements OnInit{
   public employees: Employee[] = [];
+  
   constructor(private employeeService: EmployeeService) { }
+  
   ngOnInit() {
-    this.getEmployees;
+    this.getEmployees();
   }
 
   public getEmployees(): void {
